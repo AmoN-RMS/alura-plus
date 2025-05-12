@@ -1,0 +1,208 @@
+:root {
+    --main-white: #FFFFFF;
+    --secondary-gray: #C0C0C0;
+    --tertiary-white: #f9f9f9;
+    --button-blue: #167BF7;
+    --background-color: #00030C;
+    --main-font: 'Inter';
+    --button-blue-hover: #3a92ff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-white);
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;    
+    
+    
+}
+
+.containerButton {
+    background-color: var(--button-blue);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--main-white);
+    display: block;
+    text-decoration: none;
+    margin: 0em 3em 1em 3em;
+}
+
+.secondaryButton {
+    background-color: transparent;
+    border: 1px solid var(--main-white); 
+}
+
+.containerNotice {
+    font-size: 0.75rem;
+    color: var(--secondary-gray);
+}
+
+.containerTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.containerImage {
+    margin: 1.375em 0em 3.375em 0em;
+}
+
+.containerBox {
+    margin: 0em 6em;
+
+   
+}
+
+.descriptionImage {
+    width: 80%;
+}
+
+
+.secondary {
+    margin: 0 10em;
+}
+
+.descriptionTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--main-white);
+    margin-bottom: 0.15em;
+}
+
+.descriptionText {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--tertiary-white);
+    opacity: 0.8;
+}
+
+.descriptionButton {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.descriptionContainer {
+    padding: 2em;
+}
+
+.containerDevices {
+    text-align: center;
+    margin-bottom: 10em;
+    font-weight: 700;
+}
+
+.devicesTitle {
+    font-size: 3rem;
+    margin-bottom: 1.5em;
+}
+
+.devicesList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5em;
+    font-size: 2rem;
+  
+}    
+    
+.footer {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2em;
+    
+}
+
+.footerList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 16px;
+    margin: 3em 0;
+    
+}
+
+.footerList a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.paragraphFooter {
+    font-size: 0.875rem;
+    color: var(--secondary-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.listLink:hover {
+    color: #C0C0C0;
+}
+
+.containerButton:hover {
+    background-color: var(--button-blue-hover);
+}
+
+.secondaryButton:hover {
+    background-color: #ffffff31;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        background-image: none;  
+        height: 80vh;
+    }
+    .containerImage {
+        width: 50vw;
+    }
+    .containerBox {
+        margin: 2em;
+    }
+    .secondary {
+        margin: 0;
+        text-align: center;
+    }
+
+    .descriptionImage {
+        width: 50vw;
+    }
+
+    .devicesTitle {
+        font-size: 2rem;
+    }
+
+    .devicesList {
+        display: block;
+        margin: 0;
+        font-size: 1.5rem;
+     
+    }
+
+    .footerList {
+        display: block;
+        text-align: center;
+    }
+    .paragraphFooter {
+        margin: 2em 2em;
+    }
+   
+}
+
